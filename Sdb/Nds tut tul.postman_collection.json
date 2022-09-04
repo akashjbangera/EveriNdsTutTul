@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "1cb45970-536f-41f4-8d75-2600e55c6dcc",
+		"name": "Nds tut tul",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

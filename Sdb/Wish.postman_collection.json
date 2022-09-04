@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "8c4fe6be-603e-4624-acfd-2616e6e85af7",
+		"name": "Wish",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all wish",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get only one wish",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add new wish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WishAry.NameVak\":\"Vini\",\r\n    \"PlanVak\":\"To buy car\",\r\n    \"CostVak\":78888,\r\n    \"YearVak\":2000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/wish",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update wish",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WishVak\":\"Sandals\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/wish/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wish",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete wish",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WishVak\":\"MacBook Pro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/wish/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wish",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
